@@ -1,24 +1,30 @@
-# lol-match-analysis-pages
+# lol-reviews
 
 Static HTML for **sample / archived** League coaching reports. Split from [lol-match-analysis](https://github.com/jinayoon/lol-match-analysis) so the skill repo stays code + docs only.
 
 ## GitHub Pages
 
-1. Create a **new** repository on GitHub (e.g. `lol-match-analysis-pages`).
+1. Create a **new** repository on GitHub named **`lol-reviews`** (or rename an existing Pages repo to that name in **Settings → General → Repository name** — the site URL becomes `https://YOUR_USER.github.io/lol-reviews/`).
 2. From this folder:
 
    ```bash
-   cd /path/to/lol-match-analysis-pages
+   cd /path/to/lol-reviews
    git init -b main
    git add .
    git commit -m "Initial Pages site from lol-match-analysis export"
-   git remote add origin https://github.com/YOUR_USER/lol-match-analysis-pages.git
+   git remote add origin https://github.com/YOUR_USER/lol-reviews.git
    git push -u origin main
    ```
 
-3. In the new repo: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch `main` / folder `/ (root)`**.
+3. In the repo: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch `main` / folder `/ (root)`**.
 
-Your site will be at `https://YOUR_USER.github.io/lol-match-analysis-pages/` (URLs match filenames, e.g. `sample-braum.html`).
+Your site will be at `https://YOUR_USER.github.io/lol-reviews/` (URLs match filenames, e.g. `sample-braum.html`).
+
+If you already pushed under another repo name, rename the repo on GitHub (above) and update the remote:
+
+```bash
+git remote set-url origin https://github.com/YOUR_USER/lol-reviews.git
+```
 
 ## Updating reports
 
